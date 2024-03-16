@@ -18,8 +18,12 @@ export default {
           isExternalDomain: true,
           domainName: "ziolojt.com",
           cdk: {
-            certificate: Certificate.fromCertificateArn(stack, "AcmCert", process.env.CERT_ARN!)
-          }
+            certificate: Certificate.fromCertificateArn(
+              stack,
+              "AcmCert",
+              process.env.CERT_ARN!,
+            ),
+          },
         },
       });
 
