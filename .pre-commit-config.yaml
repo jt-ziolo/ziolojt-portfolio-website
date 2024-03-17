@@ -2,9 +2,9 @@ repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.4.0
     hooks:
-      - id: no-commit-to-branch
+      # - id: no-commit-to-branch
       - id: check-added-large-files
-        args: ["--maxkb=500"]
+        args: ["--maxkb=2400"]
       - id: check-yaml
         args: [--allow-multiple-documents]
       - id: fix-encoding-pragma

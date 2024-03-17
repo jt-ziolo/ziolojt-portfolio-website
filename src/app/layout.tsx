@@ -1,11 +1,38 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Quattrocento, Space_Grotesk, Wallpoet } from "next/font/google";
 import "./globals.css";
+
+/* Fonts:
+  - Inter
+  - Quattrocento
+  - Space Grotesk
+  - Wallpoet
+*/
 
 const inter = Inter({
   subsets: ["latin"],
-  // variable: "--font-inter",
+  variable: "--font-inter",
   display: "swap",
+});
+
+const quattrocento = Quattrocento({
+  subsets: ["latin"],
+  variable: "--font-quattrocento",
+  display: "swap",
+  weight: "700",
+});
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-space-grotesk",
+  display: "swap",
+});
+
+const wallpoet = Wallpoet({
+  subsets: ["latin"],
+  variable: "--font-wallpoet",
+  display: "swap",
+  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -20,7 +47,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={`${inter.variable} ${quattrocento.variable} ${spaceGrotesk.variable} ${wallpoet.variable}`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
