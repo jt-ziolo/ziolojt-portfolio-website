@@ -1,5 +1,8 @@
+import Link from "next/link";
 import styles from "./page.module.css";
 import BackgroundImage from "@/components/background-image";
+import Name from "@/components/name";
+import Navbar from "@/components/navbar";
 
 export default function Home() {
   return (
@@ -8,12 +11,7 @@ export default function Home() {
         <div className={styles.bgGradient}></div>
       </BackgroundImage>
       <section className={styles.header}>
-        <h1 className={styles.title}>
-          <span className={styles.initial}>J</span>
-          <span className={styles.dot}>.</span>
-          <span className={styles.initial}>T</span>
-          <span className={styles.dot}>.</span> Ziolo
-        </h1>
+        <Name containerClassName={styles.title} />
         <h2 className={styles.addGap}>Web Design & Front-End Development</h2>
         <p className={styles.addGap}>
           Hello, I’m a <strong>Web Designer</strong> and{" "}
@@ -23,6 +21,11 @@ export default function Home() {
           and individuals achieve their online goals.
         </p>
       </section>
+      <Navbar />
+      <section id="about">About Me</section>
+      <section id="portfolio">Portfolio</section>
+      <section id="contact">Contact</section>
+      <footer>Footer</footer>
     </main>
   );
 }

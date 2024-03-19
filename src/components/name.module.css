@@ -1,0 +1,19 @@
+.container {
+  font-family: var(--font-space-grotesk);
+  font-weight: 700;
+  width: max-content;
+}
+
+.initial {
+  letter-spacing: -0.57rem;
+}
+
+.dot {
+  font-family: var(--font-wallpoet);
+  font-weight: 400;
+  letter-spacing: -0.7rem;
+}
+
+.space {
+  letter-spacing: 0.5rem;
+}
