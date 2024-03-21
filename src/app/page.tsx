@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import BackgroundImage from "@/components/background-image";
 import Name from "@/components/name";
 import Navbar from "@/components/navbar";
+import ProdPlaceholder from "./prod-placeholder";
 
 export default function Home() {
   const fadeInTransition = (child: React.ReactNode, fadeDelay: number) => {
@@ -18,6 +19,9 @@ export default function Home() {
       </MotionWrapper>
     );
   };
+  if (process.env.NODE_ENV !== "development" || process.env.SHOW_PROD === "1") {
+    return <ProdPlaceholder />;
+  }
   return (
     <main className={styles.main}>
       <BackgroundImage containerClassName={styles.bgImage}>

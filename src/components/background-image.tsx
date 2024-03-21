@@ -1,11 +1,12 @@
 import Image from "next/image";
 import headerBg from "../../public/header-bg.webp";
-import { FC, ReactEventHandler } from "react";
+import { CSSProperties, FC, ReactEventHandler } from "react";
 
 type Props = {
   containerClassName: string;
   children?: JSX.Element;
-  onLoad?: ReactEventHandler<HTMLImageElement>;
+  // onLoad?: ReactEventHandler<HTMLImageElement>;
+  imageClassName?: string;
 };
 
 const BackgroundImage: FC<Props> = (props) => {
@@ -14,15 +15,15 @@ const BackgroundImage: FC<Props> = (props) => {
       {props.children}
       <Image
         alt={""}
+        className={props.imageClassName}
         src={headerBg}
         placeholder="blur"
         quality={100}
         fill
         sizes="100vw"
-        onLoad={props.onLoad}
+        // onLoad={props.onLoad}
         style={{
           objectFit: "cover",
-          objectPosition: "center bottom",
         }}
       />
     </div>
