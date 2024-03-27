@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# JT Ziolo Portfolio Website
 
-## Getting Started
+This is the source code for my portfolio website. It was designed using [Figma](https://www.figma.com), built using [React/Next.js](https://nextjs.org/), and deployed using [SST](https://sst.dev/) (an Amazon AWS serverless framework).
 
-First, run the development server:
+This project is licensed under Apache 2.0, and you can view the full license text in the LICENSE file.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Info/Credits
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Google fonts used:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Inter (main body font)
+- Space Grotesk (title)
+- Wallpoet (periods after initials in title only)
+- Quattrocento (subtitle)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Tools used:
 
-## Learn More
+- React/Next.js (front-end framework)
+- Radix UI (buttons, other small UI components)
+- Framer Motion (component animations)
+- TypeScript
+- Figma (design)
+- fnm (Node version manager)
+- pre-commit (Python module which simplifies git pre-commit hooks)
+- ESLint (linter)
+- Prettier (formatter)
+- VS Code IDE (Neovim extension)
+- pnpm (npm alternative)
 
-To learn more about Next.js, take a look at the following resources:
+Other tools (tech stack):
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- SST (Amazon AWS serverless framework)
+-
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+I opted not to use Tailwind for this project, instead using CSS Modules.
